@@ -1006,12 +1006,12 @@ split_list = [x.split(" ") for x in original_list]
 horizontal = 0
 depth = 0
 
-for direction, value in split_list:
+for direction, X in split_list:
     if direction == "forward":
-        horizontal += int(value)
+        horizontal += int(X)
     elif direction == "up":
-        depth -= int(value)
+        depth -= int(X)
     else:
-        depth += int(value)
+        depth += int(X)
 
 print(horizontal * depth)

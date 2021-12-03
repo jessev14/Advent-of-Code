@@ -2000,16 +2000,16 @@ input = """191
 10526
 """
 
-measurementsList = [int(x) for x in input.splitlines()]
+measurements_list = [int(x) for x in input.splitlines()]
 
-increaseCount = 0
+increase_count = 0
 
-for idx in range(len(measurementsList) - 3):
-    common = measurementsList[idx + 1] + measurementsList[idx + 2]
-    first = measurementsList[idx] + common
-    second = common + measurementsList[idx + 3]
+for idx in range(len(measurements_list) - 3):
+    common = measurements_list[idx + 1] + measurements_list[idx + 2]
+    first = measurements_list[idx] + common
+    second = common + measurements_list[idx + 3]
 
     if second > first:
-        increaseCount += 1
+        increase_count += 1
 
-print(increaseCount)
+print(increase_count)

@@ -2000,12 +2000,12 @@ input = """191
 10526
 """
 
-measurementsList = input.splitlines()
+measurements_list = input.splitlines()
 
-increaseCount = 0
+increase_count = 0
 
-for idx in range(1, len(measurementsList)):
-    if int(measurementsList[idx]) > int(measurementsList[idx - 1]):
-        increaseCount += 1
+for idx in range(1, len(measurements_list)):
+    if int(measurements_list[idx]) > int(measurements_list[idx - 1]):
+        increase_count += 1
 
-print(increaseCount)
+print(increase_count)
